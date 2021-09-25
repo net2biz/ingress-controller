@@ -33,6 +33,9 @@ sleep 3
 # testing the SSL certificate. Below command should return the nginx webpage 
 curl -k https://example.com
 
+# wait for 3 seconds for background processes to sync up
+sleep 3
+
 # testing the SSL certificate. Below command should return the nginx webpage 
 curl --cacert tls.crt https://example.com
 
